@@ -78,9 +78,9 @@ reset()
 // document.querySelector('.btn').addEventListener('click', guessed)
 
 for(let i=0; i<values.length; i++){
-    var pm = '.p'
+    var pm = '#p'
     if (values[i] < 0)
-        pm = '.m'
+        pm = '#m'
     var classes = pm + Math.abs(values[i])
     document.querySelector(classes).addEventListener('click', ()=>{n.textContent = +n.textContent + values[i]; guessed();})
 }
